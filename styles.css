@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    /* Primary colors */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral colors */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    /* Typography */
+    --red-hat-display: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--pale-blue);
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--red-hat-display);
+    font-size: 16px;
+   
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+    /* margin-top: 20rem; */
+    /* border: 1px solid black;  */
+    border-radius: 30px;
+    background-color: white;
+}
+
+.top-img {
+    display: flex;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-bottom: 1.5rem;
+
+
+}
+
+img {
+    width: 100%;
+    max-height: 100%;
+}
+
+
+.top-info {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    /* padding: 0.8rem; */
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.main-header {
+    text-align: center;
+    font-weight: 700;
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    /* margin-bottom: 1.5rem; */
+}
+
+.about-info {
+    text-align: center;
+    letter-spacing: 1.2px;
+    padding: 1rem ;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.plan-container {
+    border: 1px solid #F8F9FE;
+    width: 85%;
+    margin-bottom: 2rem;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--very-pale-blue);
+    background-color: #F8F9FE;
+    flex-wrap: nowrap;
+}
+
+.music-icon-holder {
+    flex-basis: 1;
+}
+
+.plan-amount {
+    margin-left: -60px;
+
+}
+
+.annual {
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 0.1rem;
+    font-size: 1rem;
+}
+
+.amount {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--desaturated-blue)
+}
+
+.change-button {
+    justify-content: flex-end;
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.payment-button {
+    font-family: var(--red-hat-display);
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--very-pale-blue);
+    background-color: var(--bright-blue);
+    padding: 1rem;
+    width: 85%;
+    border-style: none;
+    border-radius: 13px;
+    margin-bottom: 0.8rem;  
+}
+
+.cancel-button {
+    margin-bottom: 1rem;
+    border: none;
+    background: none;
+    color: var(--desaturated-blue);
+    padding: 1.1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.attribution {
+    
+}
+
+
+
