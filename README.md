@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Site](images/screenshot-project.jpg?raw=true "Site")
+![Site](./images/screenshot-project.jpg?raw=true "Site")
 
 ### Links
 
