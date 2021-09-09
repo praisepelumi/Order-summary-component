@@ -128,11 +128,21 @@ img {
     color: var(--desaturated-blue)
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .change-button {
     justify-content: flex-end;
     color: var(--bright-blue);
     font-weight: 700;
     font-size: 0.9rem;
+}
+
+.change-button > a:hover,  a:active {
+    color: var(--bright-blue);
+    opacity: 0.7;
+    text-decoration: none;
 }
 
 .payment-button {
@@ -146,6 +156,14 @@ img {
     border-style: none;
     border-radius: 13px;
     margin-bottom: 0.8rem;  
+    box-shadow: 0 1rem 1.2rem hsla(245, 75%, 52%, 0.23);
+}
+
+.payment-button:hover {
+    opacity: 0.7;
+    background-color: var(--bright-blue);
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 1rem 0.5rem hsla(245, 75%, 52%, 0.23);
 }
 
 .cancel-button {
@@ -158,8 +176,31 @@ img {
     font-weight: 700;
 }
 
-.attribution {
-    
+.cancel-button:hover {
+    color: var(--dark-blue);
+}
+
+@media only screen and (min-width: 560px){
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/pattern-background-desktop.svg);
+
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+    }
+
+    .about-info {
+        font-size: 0.9rem;
+    }
 }
 
 
